@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="0dp"
+            android:layout_height="800dp"
+            android:scaleType="fitStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/backimg" />
+
+        <ImageView
+            android:id="@+id/rect_image1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="212dp"
+            android:layout_marginEnd="16dp"
+            android:elevation="5dp"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/dr_dima_nagiev"
+            android:textStyle="bold"
+            android:textColor=" #1A82FC"
+            android:textSize="26sp"
+            android:translationZ="90dp"
+            app:layout_constraintEnd_toEndOf="@+id/rect_image1"
+            app:layout_constraintStart_toStartOf="@+id/rect_image1"
+            app:layout_constraintTop_toBottomOf="@+id/avatar_image" />
+
+        <ImageView
+            android:id="@+id/avatar_image"
+            android:layout_width="173dp"
+            android:layout_height="173dp"
+            android:layout_marginTop="84dp"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar" />
+
+        <ImageView
+            android:id="@+id/qr_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rect_image1"
+            app:srcCompat="@drawable/qrcode" />
+
+        <ImageView
+            android:id="@+id/rect_image2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="false"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qr_image"
+            app:srcCompat="@drawable/site" />
+
+        <ImageView
+            android:id="@+id/rect_image3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rect_image2"
+            app:srcCompat="@drawable/img_2" />
+
+        <ImageView
+            android:id="@+id/facebook_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/back_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rect_image3"
+            app:srcCompat="@drawable/face_logo" />
+
+        <ImageView
+            android:id="@+id/inst_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/facebook_logo"
+            app:layout_constraintEnd_toStartOf="@+id/facebook_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/facebook_logo"
+            app:srcCompat="@drawable/inst_logo" />
+
+        <ImageView
+            android:id="@+id/in_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/facebook_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/facebook_logo"
+            app:layout_constraintTop_toTopOf="@+id/facebook_logo"
+            app:srcCompat="@drawable/in_logo" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rect_image1"
+            app:layout_constraintEnd_toEndOf="@+id/rect_image1"
+            app:layout_constraintStart_toStartOf="@+id/rect_image1"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:srcCompat="@drawable/call" />
+
+        <ImageView
+            android:id="@+id/texting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toBottomOf="@+id/call"
+            app:layout_constraintEnd_toStartOf="@+id/call"
+            app:layout_constraintStart_toStartOf="@+id/rect_image1"
+            app:layout_constraintTop_toTopOf="@+id/call"
+            app:layout_constraintVertical_bias="0.437"
+            app:srcCompat="@drawable/text" />
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:translationZ="90dp"
+            app:layout_constraintBottom_toBottomOf="@+id/call"
+            app:layout_constraintEnd_toEndOf="@+id/rect_image1"
+            app:layout_constraintStart_toEndOf="@+id/call"
+            app:layout_constraintTop_toTopOf="@+id/call"
+            app:layout_constraintVertical_bias="0.437"
+            app:srcCompat="@drawable/email" />
+
+        <TextView
+            android:id="@+id/qr_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:text="Scan To Connect"
+            app:layout_constraintStart_toEndOf="@+id/qr_image"
+            app:layout_constraintTop_toTopOf="@+id/qr_image" />
+
+        <TextView
+            android:id="@+id/qr_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/phone_number"
+            android:textColor=" #1A82FC"
+            app:layout_constraintStart_toStartOf="@+id/qr_1"
+            app:layout_constraintTop_toBottomOf="@+id/qr_1" />
+
+        <TextView
+            android:id="@+id/qr_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/mail_text"
+            app:layout_constraintStart_toStartOf="@+id/qr_2"
+            app:layout_constraintTop_toBottomOf="@+id/qr_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
